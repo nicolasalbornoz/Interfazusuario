@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitesmoke">
+<LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitulo"
+                android:text="@string/formulario"
+                android:textSize="30sp"
+                android:gravity="center_horizontal"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:background="@color/lightgray"
+        />
+
+        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nombre"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+
+                />
+
+                <EditText android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/etNombre"
+                          android:layout_marginStart="20dp"
+                />
+
+        </LinearLayout>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etContraseña"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etContaConfirm"
+                android:inputType="textPassword"
+                android:hint="@string/confirmacion"
+        />
+
+        <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/etCorreo"
+                  android:inputType="textEmailAddress"
+                  android:hint="@string/correo"
+        />
+
+
+        <EditText
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/etCedula"
+                          android:inputType="number"
+                          android:hint="@string/cedula"
+        />
+
+        <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/fecha"
+                        android:background="@color/royalblue"
+                        android:textStyle="bold"
+                        android:id="@+id/btFecha"
+                        android:onClick="showDatePickerDialog"/>
+
+                <TextView android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:id="@+id/tvMuestafecha"
+                          android:textSize="20sp"
+                          android:hint="@string/ffecha"
+                          android:padding="10dp"
+                          android:textColor="@color/red"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/spLugar"/>
+
+                <TextView android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:id="@+id/tvMestralugar"
+                          android:textSize="20sp"
+                          android:padding="10dp"
+                          android:hint="@string/nacimiento"
+                          android:textColor="@color/red"/>
+
+        </LinearLayout>
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                <RadioButton android:id="@+id/rbMasculino"
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="1"
+                             android:text="@string/masculino"
+                             android:onClick="onRadioButtonClicked"
+                             android:checked="true"/>
+
+                <RadioButton android:id="@+id/rbFemenino"
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="1"
+                             android:text="@string/femenino"
+                             android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                <CheckBox android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:id="@+id/cbCine"
+                          android:text="@string/cine"
+                          android:onClick="onCheckboxClicked"/>
+
+                <CheckBox android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:id="@+id/cbLeer"
+                          android:text="@string/leer"
+                          android:onClick="onCheckboxClicked"/>
+
+                <CheckBox android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:id="@+id/cbCorrer"
+                          android:text="@string/correr"
+                          android:onClick="onCheckboxClicked"/>
+
+
+                <CheckBox android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:id="@+id/cbNadar"
+                          android:text="@string/nadar"
+                          android:onClick="onCheckboxClicked"/>
+
+
+        </LinearLayout>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:text="@string/guardar"
+                android:id="@+id/btGuardar"
+                android:textStyle="bold"
+                android:background="@color/royalblue"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvResultado"
+                android:textSize="20sp"
+                android:hint="@string/informaci_n"
+                android:background="@color/powderblue"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+        />
+
+</LinearLayout>
+
+</ScrollView>
+

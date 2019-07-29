@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Interfazusuario</string>
+    <string name="formulario">Formulario</string>
+    <string name="nombre">Nombre</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="cedula">Número de documento</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="textview">Textview</string>
+    <string name="femenino">Femenino</string>
+    <string name="masculino">Masculino</string>
+    <string name="cine">Cine</string>
+    <string name="leer">Leer</string>
+    <string name="correr">Correr</string>
+    <string name="nadar">Nadar</string>
+    <string name="password">Contraseña</string>
+    <string name="confirmacion">Confirmar contraseña</string>
+    <string name="fecha">Fecha de nacimiento</string>
+    <string name="lugar">Lugar de nacimiento</string>
+    <string name="informaci_n">Tu información</string>
+    <string name="ffecha"> dd/mm/aaaa</string>
+    <string name="nacimiento">Lugar de nacimiento</string>
+
+</resources>
